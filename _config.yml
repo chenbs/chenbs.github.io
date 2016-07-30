@@ -5,8 +5,8 @@ header-img: img/home-bg.jpg
 email: jszycvip@gmail.com
 description: "A Sexy-poetical Technology Blog"
 keyword: ""
-url: "ccccio.com"              # your host, for absolute URL
-baseurl: "/ccccio.com"         # for example, '/blog' if your blog hosted on 'host/blog'
+url: "cccccio.com"              # your host, for absolute URL
+baseurl: "/cccccio.com"         # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
@@ -62,7 +62,7 @@ duoshuo_share: true                     # set to false if you want to use Commen
 ba_track_id: df8a68599f2b8d1e31b4f2272574566e
 # Google Analytics
 ga_track_id: 'UA-81663742-1'            # Format: UA-xxxxxx-xx
-ga_domain: ccccio.com
+ga_domain: cccccio.com
 
 
 
