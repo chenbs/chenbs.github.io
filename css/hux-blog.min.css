@@ -408,8 +408,6 @@ pre code {
 }
 
 .intro-header {
-    width: 1900px;
-    height: 600px;
     background: no-repeat center center;
     background-color: gray;
     background-attachment: scroll;
