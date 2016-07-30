@@ -377,7 +377,7 @@ pre code {
   background-attachment: scroll;
   -webkit-background-size: auto;
   -moz-background-size: auto;
-  background-size: auto;
+  background-size: 2000px 1000px;
   -o-background-size: auto;
   margin-bottom: 0px;
   /* 0 on mobile, modify by Hux */
