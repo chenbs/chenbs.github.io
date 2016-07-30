@@ -1,4 +1,3 @@
-
 ---
 layout:     post
 title:      "Welcome to Hux Blog"
@@ -9,6 +8,7 @@ header-img: "img/post-bg-2015.jpg"
 tags:
     - 生活
 ---
+
 > “Yeah It's on. ”
 
 
