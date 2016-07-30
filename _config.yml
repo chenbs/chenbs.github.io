@@ -6,7 +6,7 @@ email: jszycvip@gmail.com
 description: "A Sexy-poetical Technology Blog"
 keyword: ""
 url: "cccccio.com"              # your host, for absolute URL
-baseurl: "/cccccio.com"         # for example, '/blog' if your blog hosted on 'host/blog'
+baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 
 
 
@@ -50,7 +50,7 @@ kramdown:
 #disqus_username: _your_disqus_short_name_
 
 # Duoshuo settings
-duoshuo_username: ccccio
+duoshuo_username: cccccio
 # Share component is depend on Comment so we can NOT use share only.
 duoshuo_share: true                     # set to false if you want to use Comment without Sharing
 
