@@ -1,9 +1,9 @@
 # Site settings
-title: Your Blog
-SEOTitle: 你的博客 | Your Blog
+title: A Sexy-poetical Technology Blog
+SEOTitle: 5cio | Sexy-poetical
 header-img: img/home-bg.jpg
 email: jszycvip@gmail.com
-description: ""
+description: "A Sexy-poetical Technology Blog"
 keyword: ""
 url: "http://chenbs.github.io"              # your host, for absolute URL
 baseurl: "/chenbs.github.io"         # for example, '/blog' if your blog hosted on 'host/blog'
@@ -12,11 +12,11 @@ baseurl: "/chenbs.github.io"         # for example, '/blog' if your blog hosted 
 
 # SNS settings
 RSS: false
-weibo_username:     huxpro
-zhihu_username:     huxpro
-github_username:    huxpro
+weibo_username:     Chason_chen
+#zhihu_username:     huxpro
+github_username:    chenbs
 #twitter_username:  huxpro
-facebook_username:  huxpro
+#facebook_username:  huxpro
 
 
 
@@ -50,7 +50,7 @@ kramdown:
 #disqus_username: _your_disqus_short_name_
 
 # Duoshuo settings
-duoshuo_username: huxblog
+duoshuo_username: chenbs
 # Share component is depend on Comment so we can NOT use share only.
 duoshuo_share: true                     # set to false if you want to use Comment without Sharing
 
@@ -59,16 +59,16 @@ duoshuo_share: true                     # set to false if you want to use Commen
 
 # Analytics settings
 # Baidu Analytics
-ba_track_id: 4cc1f2d8f3067386cc5cdb626a202900
+ba_track_id: df8a68599f2b8d1e31b4f2272574566e
 # Google Analytics
-ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
+ga_track_id: 'UA-81663742-1'            # Format: UA-xxxxxx-xx
 ga_domain: chenbs.github.io
 
 
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "我等明天再写，我要睡觉了。"
+sidebar-about-description: "Want to be a sexy-poetical man.<br>The word is my combined. Be happy with guys who I like."
 #sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
