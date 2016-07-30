@@ -924,6 +924,7 @@ body {
 
 @media only screen and (min-width:768px) {
     .one-tag-list .post-preview {
+        margin-top:40px;
         margin-left: 20px
     }
     .one-tag-list .post-preview>a>.post-title {
