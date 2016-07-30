@@ -408,6 +408,7 @@ pre code {
 }
 
 .intro-header {
+    height: 650px;
     background: no-repeat center center;
     background-color: gray;
     background-attachment: scroll;

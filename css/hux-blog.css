@@ -372,6 +372,7 @@ pre code {
   }
 }
 .intro-header {
+  height: 650px;
   background: no-repeat center center;
   background-color: #808080;
   background-attachment: scroll;
