@@ -94,7 +94,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #98FB98
+    color: #0085a1
 }
 
 a img:hover,
@@ -172,7 +172,7 @@ pre code {
 
 .post-container a:hover,
 .post-container a:focus {
-    color: #98FB98
+    color: #0085a1
 }
 
 .post-container h1,
@@ -396,7 +396,7 @@ pre code {
     }
     .navbar-custom.is-fixed .nav li a:hover,
     .navbar-custom.is-fixed .nav li a:focus {
-        color: #98FB98
+        color: #0085a1
     }
     .navbar-custom.is-visible {
         -webkit-transform: translate3d(0, 100%, 0);
@@ -538,7 +538,7 @@ pre code {
 .post-preview>a:hover,
 .post-preview>a:focus {
     text-decoration: none;
-    color: #98FB98
+    color: #0085a1
 }
 
 .post-preview>a>.post-title {
@@ -571,7 +571,7 @@ pre code {
 
 .post-preview>.post-meta>a:hover,
 .post-preview>.post-meta>a:focus {
-    color: #98FB98;
+    color: #0085a1;
     text-decoration: underline
 }
 
@@ -722,8 +722,8 @@ form .row:first-child .floating-label-form-group {
 
 .btn-default:hover,
 .btn-default:focus {
-    background-color: #98FB98;
-    border: 1px solid #98FB98;
+    background-color: #0085a1;
+    border: 1px solid #0085a1;
     color: #fff
 }
 
@@ -760,8 +760,8 @@ form .row:first-child .floating-label-form-group {
 .pager li>a:hover,
 .pager li>a:focus {
     color: #fff;
-    background-color: #98FB98;
-    border: 1px solid #98FB98
+    background-color: #0085a1;
+    border: 1px solid #0085a1
 }
 
 .pager .disabled>a,
@@ -862,7 +862,7 @@ body {
 #tag_cloud .tag:hover,
 #tag_cloud a:active,
 #tag_cloud .tag:active {
-    background-color: #98FB98!important
+    background-color: #0085a1!important
 }
 
 @media only screen and (min-width:768px) {
