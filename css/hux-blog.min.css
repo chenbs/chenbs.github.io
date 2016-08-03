@@ -389,7 +389,7 @@ pre code {
     }
     .navbar-custom.is-fixed .navbar-brand:hover,
     .navbar-custom.is-fixed .navbar-brand:focus {
-        color: #98FB98
+        color: #0085a1
     }
     .navbar-custom.is-fixed .nav li a {
         color: #404040
@@ -697,7 +697,7 @@ footer .copyright a:focus {
 }
 
 .floating-label-form-group-with-focus label {
-    color: #98FB98
+    color: #0085a1
 }
 
 form .row:first-child .floating-label-form-group {
@@ -886,7 +886,7 @@ body {
 }
 
 .listing-seperator {
-    color: #98FB98;
+    color: #0085a1;
     font-size: 21px!important
 }
 
