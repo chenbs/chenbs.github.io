@@ -32,7 +32,7 @@
 
 .sidebar-container a:hover,
 .sidebar-container a:active {
-    color: #98FB98!important
+    color: #6495ED!important
 }
 
 .sidebar-container .tags a {
@@ -41,7 +41,7 @@
 
 .sidebar-container .tags a:hover,
 .sidebar-container .tags a:active {
-    border-color: #98FB98
+    border-color: #6495ED
 }
 
 .sidebar-container .short-about img {
@@ -94,7 +94,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #0085a1
+    color: #6495ED
 }
 
 a img:hover,
@@ -172,7 +172,7 @@ pre code {
 
 .post-container a:hover,
 .post-container a:focus {
-    color: #0085a1
+    color: #6495ED
 }
 
 .post-container h1,
@@ -389,14 +389,14 @@ pre code {
     }
     .navbar-custom.is-fixed .navbar-brand:hover,
     .navbar-custom.is-fixed .navbar-brand:focus {
-        color: #0085a1
+        color: #6495ED
     }
     .navbar-custom.is-fixed .nav li a {
         color: #404040
     }
     .navbar-custom.is-fixed .nav li a:hover,
     .navbar-custom.is-fixed .nav li a:focus {
-        color: #0085a1
+        color: #6495ED
     }
     .navbar-custom.is-visible {
         -webkit-transform: translate3d(0, 100%, 0);
@@ -538,7 +538,7 @@ pre code {
 .post-preview>a:hover,
 .post-preview>a:focus {
     text-decoration: none;
-    color: #0085a1
+    color: #6495ED
 }
 
 .post-preview>a>.post-title {
@@ -571,7 +571,7 @@ pre code {
 
 .post-preview>.post-meta>a:hover,
 .post-preview>.post-meta>a:focus {
-    color: #0085a1;
+    color: #6495ED;
     text-decoration: underline
 }
 
@@ -596,7 +596,7 @@ pre code {
 }
 
 .post-content-preview:hover {
-    color: #98FB98
+    color: #6495ED
 }
 
 @media only screen and (min-width:768px) {
@@ -644,7 +644,7 @@ footer .copyright a {
 
 footer .copyright a:hover,
 footer .copyright a:focus {
-    color: #98FB98
+    color: #6495ED
 }
 
 .floating-label-form-group {
@@ -697,7 +697,7 @@ footer .copyright a:focus {
 }
 
 .floating-label-form-group-with-focus label {
-    color: #0085a1
+    color: #6495ED
 }
 
 form .row:first-child .floating-label-form-group {
@@ -722,8 +722,8 @@ form .row:first-child .floating-label-form-group {
 
 .btn-default:hover,
 .btn-default:focus {
-    background-color: #0085a1;
-    border: 1px solid #0085a1;
+    background-color: #6495ED;
+    border: 1px solid #6495ED;
     color: #fff
 }
 
@@ -760,8 +760,8 @@ form .row:first-child .floating-label-form-group {
 .pager li>a:hover,
 .pager li>a:focus {
     color: #fff;
-    background-color: #0085a1;
-    border: 1px solid #0085a1
+    background-color: #6495ED;
+    border: 1px solid #6495ED
 }
 
 .pager .disabled>a,
@@ -776,13 +776,13 @@ form .row:first-child .floating-label-form-group {
 ::-moz-selection {
     color: #fff;
     text-shadow: none;
-    background: #98FB98
+    background: #6495ED
 }
 
 ::selection {
     color: #fff;
     text-shadow: none;
-    background: #98FB98
+    background: #6495ED
 }
 
 img::selection {
@@ -796,7 +796,7 @@ img::-moz-selection {
 }
 
 body {
-    webkit-tap-highlight-color: #98FB98
+    webkit-tap-highlight-color: #6495ED
 }
 
 .tags {
@@ -862,7 +862,7 @@ body {
 #tag_cloud .tag:hover,
 #tag_cloud a:active,
 #tag_cloud .tag:active {
-    background-color: #0085a1!important
+    background-color: #6495ED!important
 }
 
 @media only screen and (min-width:768px) {
@@ -886,7 +886,7 @@ body {
 }
 
 .listing-seperator {
-    color: #0085a1;
+    color: #6495ED;
     font-size: 21px!important
 }
 
