@@ -19,7 +19,8 @@ description: "A Sexy-poetical Technology Blog"
         <param name="scale" value="noscale" />
         <param name="salign" value="tl" />
 
-
+    </object>
+</div>
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
         <h2 class="post-title">
@@ -40,8 +41,7 @@ description: "A Sexy-poetical Technology Blog"
 </div>
 <hr>
 {% endfor %}
-    </object>
-</div>
+
 <!-- Pager -->
 {% if paginator.total_pages > 1 %}
 <ul class="pager">
