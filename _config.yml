@@ -68,7 +68,7 @@ ga_domain: cccccio.com
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Want to be a sexy-poetical man.<br>The word is my combined. <br>Be happy with guys who I like.<br><br>Offer me a cup of coffee ?<br>Alipay:609709686@qq.com"
+sidebar-about-description: "&nbsp;&nbsp;Want to be a sexy-poetical man.<br>&nbsp;&nbsp;The word is my combined. <br>&nbsp;&nbsp;Be happy with guys who I like.<br><br>&nbsp;&nbsp;Offer me a cup of coffee ?<br>&nbsp;&nbsp;Alipay:609709686@qq.com"
 #sidebar-avatar: /img/avatar-hux.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
