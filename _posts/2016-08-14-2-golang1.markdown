@@ -18,10 +18,10 @@ tags:
 学习Golang也差不多二十天了，Golang是一门比较容易上手的语言，但是我对其中的精妙之处还没有领悟到，只能先总结一些基础的问题和常见案例，既是分享，也是对自己学习和工作的总结。此篇只是分享一些资源。
 
 安装以及基本语法就不罗列了，网上很多，在这儿放几个网址，自取。被墙的请自行翻墙，此处推荐Shadowsocks。
-另外，推荐加几个Golang的群，里面会有分享资源和学习用书以及大神们的问答。推荐[无闻](https://github.com/Unknwon/go-fundamental-programming)的系列教程。
-[Golang初学者的资源整理](http://www.jianshu.com/p/4c55f36c67bc)
-[《Go入门指南》](https://github.com/Unknwon/the-way-to-go_ZH_CN/blob/master/eBook/directory.md)
-[A Tour of Go](https://tour.golang.org/welcome/1)
+另外，推荐加几个Golang的群，里面会有分享资源和学习用书以及大神们的问答。推荐[无闻](https://github.com/Unknwon/go-fundamental-programming)的系列教程。    
+[Golang初学者的资源整理](http://www.jianshu.com/p/4c55f36c67bc)   
+[《Go入门指南》](https://github.com/Unknwon/the-way-to-go_ZH_CN/blob/master/eBook/directory.md)   
+[A Tour of Go](https://tour.golang.org/welcome/1)    
 [彥霖 實驗筆記-Go](http://lolikitty.pixnet.net/blog/category/1570507)
 
 
