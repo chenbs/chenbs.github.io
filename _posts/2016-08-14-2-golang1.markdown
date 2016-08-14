@@ -1,0 +1,147 @@
+---
+layout:     post
+title:      "「Golang」Golang学习笔记——01"
+subtitle:   "主要是介绍学习Golang的入门"
+date:       2016-08-14 23:09:00
+author:     "chenbs"
+header-img: "img/post-bg-golang1.jpg"
+tags:
+    - Golang
+---
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="720" height="86" src="http://music.163.com/outchain/player?type=2&id=28815583&auto=1&height=66"></iframe>
+
+
+## Foreword
+
+> 上干货!
+
+学习Golang也差不多二十天了，Golang是一门比较容易上手的语言，但是我对其中的精妙之处还没有领悟到，只能先总结一些基础的问题和常见案例，既是分享，也是对自己学习和工作的总结。此篇只是分享一些资源。
+
+安装以及基本语法就不罗列了，网上很多，在这儿放几个网址，自取。被墙的请自行翻墙，此处推荐Shadowsocks。
+另外，推荐加几个Golang的群，里面会有分享资源和学习用书以及大神们的问答。推荐[无闻](https://github.com/Unknwon/go-fundamental-programming)的系列教程。
+[Golang初学者的资源整理](http://www.jianshu.com/p/4c55f36c67bc)
+[《Go入门指南》](https://github.com/Unknwon/the-way-to-go_ZH_CN/blob/master/eBook/directory.md)
+[A Tour of Go](https://tour.golang.org/welcome/1)
+[彥霖 實驗筆記-Go](http://lolikitty.pixnet.net/blog/category/1570507)
+
+
+---
+
+
+## 命令行聊天室
+
+> 简易版聊天室，此处先贴的是命令行版，也是参考别人完成的。
+
+```js
+//server.go
+
+package main
+
+import (
+    "bufio"
+    "fmt"
+    "net"
+)
+
+// 用来记录所有的客户端连接
+var ConnMap map[string]*net.TCPConn
+
+func main() {
+    fmt.Println("Starting the server ...")
+    var tcpAddr *net.TCPAddr
+    ConnMap = make(map[string]*net.TCPConn)
+    tcpAddr, _ = net.ResolveTCPAddr("tcp", "127.0.0.1:9999")
+
+    tcpListener, _ := net.ListenTCP("tcp", tcpAddr)
+    fmt.Println("server is OK ")
+    defer tcpListener.Close()
+
+    for {
+        tcpConn, err := tcpListener.AcceptTCP()
+        if err != nil {
+            continue
+        }
+
+        fmt.Println("A client connected : " + tcpConn.RemoteAddr().String())
+        // 新连接加入map
+        ConnMap[tcpConn.RemoteAddr().String()] = tcpConn
+        go tcpPipe(tcpConn)
+    }
+
+}
+
+func tcpPipe(conn *net.TCPConn) {
+    ipStr := conn.RemoteAddr().String()
+    defer func() {
+        fmt.Println("disconnected :" + ipStr)
+        conn.Close()
+    }()
+    reader := bufio.NewReader(conn)
+
+    for {
+        message, err := reader.ReadString('\n')
+        if err != nil {
+            return
+        }
+        fmt.Println(conn.RemoteAddr().String() + ":" + string(message))
+        // 这里返回消息改为了广播
+        boradcastMessage(conn.RemoteAddr().String() + ":" + string(message))
+    }
+}
+
+func boradcastMessage(message string) {
+    b := []byte(message)
+    // 遍历所有客户端并发送消息
+    for _, conn := range ConnMap {
+        conn.Write(b)
+    }
+}
+
+
+//client.go
+package main
+
+import (
+    "bufio"
+    "fmt"
+    "net"
+)
+
+var quitSemaphore chan bool
+
+func main() {
+    var tcpAddr *net.TCPAddr
+    tcpAddr, _ = net.ResolveTCPAddr("tcp", "127.0.0.1:9999")
+
+    conn, _ := net.DialTCP("tcp", nil, tcpAddr)
+    defer conn.Close()
+    fmt.Println("connected!")
+
+    go onMessageRecived(conn)
+
+    // 控制台聊天功能加入
+    for {
+        var msg string
+        fmt.Scanln(&msg)
+        if msg == "quit" {
+            break
+        }
+        b := []byte(msg + "\n")
+        conn.Write(b)
+    }
+    <-quitSemaphore
+}
+
+func onMessageRecived(conn *net.TCPConn) {
+    reader := bufio.NewReader(conn)
+    for {
+        msg, err := reader.ReadString('\n')
+        fmt.Println(msg)
+        if err != nil {
+            quitSemaphore <- true
+            break
+        }
+    }
+}
+
+```
