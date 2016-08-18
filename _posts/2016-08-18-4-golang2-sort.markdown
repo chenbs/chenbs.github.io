@@ -19,22 +19,25 @@ tags:
       [golang中sort包用法](http://blog.csdn.net/chenbaoke/article/details/42340301)    
 
 
+
 `sort`包中实现了３种基本的排序算法：插入排序．快排和堆排序．和其他语言中一样，这三种方式都是不公开的，他们只在 `sort`包内部使用．所以用户在使用 `sort`包进行排序时无需考虑使用那种排序方式， `sort.Interface`定义的三个方法：获取数据集合长度的 `Len()`方法、比较两个元素大小的 `Less()`方法和交换两个元素位置的 `Swap()`方法，就可以顺利对数据集合进行排序。 `sort`**包会根据实际数据自动选择高效的排序算法。**
 
+
 ```js
-func Float64s(a []float64)     //Float64s将类型为float64的slice a以升序方式进行排序
+func Float64s(a []float64)                  //Float64s将类型为float64的slice a以升序方式进行排序
 func Float64sAreSorted(a []float64) bool　　//判定是否已经进行排序func Ints(a []int)
 
-func Ints(a []int)                       //Ints 以升序排列 int 切片。
-func IntsAreSorted(a []int) bool　　　  //IntsAreSorted 判断 int 切片是否已经按升序排列。
-func IsSorted(data Interface) bool    IsSorted 判断数据是否已经排序。包括各种可sort的数据类型的判断．
+func Ints(a []int)                          //Ints 以升序排列 int 切片。
+func IntsAreSorted(a []int) bool　　　      //IntsAreSorted 判断 int 切片是否已经按升序排列。
+func IsSorted(data Interface) bool          //IsSorted 判断数据是否已经排序。包括各种可sort的数据类型的判断．
 
-func Strings(a []string)//Strings 以升序排列 string 切片。
-func StringsAreSorted(a []string) bool//StringsAreSorted 判断 string 切片是否已经按升序排列。
+func Strings(a []string)//Strings           //以升序排列 string 切片。
+func StringsAreSorted(a []string) bool      //StringsAreSorted 判断 string 切片是否已经按升序排列。
 
 ```
 
-### Interface 接口
+
+## Interface 接口
 
 Go 语言标准库提供了排序的package sort，也实现了对 `int` ，`float64`和 `string`三种基础类型的排序接口。所有排序调用 `sort.Sort`，内部根据排序数据个数自动切换排序算法（堆排、快排、插排）。下面这段代码出自Go标准库 `sort/sort.go`：
 
@@ -77,6 +80,7 @@ func Sort(data Interface) {
 }
 
 ```
+
 这里不详细探讨排序算法的实现和性能细节，主要写一下如何使用标准库对基础数据进行排序，以及如何实现对自定义类型的数据进行排序。
 标准库提供一个通用接口，只要实现了这个接口，就可以通过调用 `sort.Sort` 来排序。
 
@@ -94,7 +98,8 @@ type Interface interface {
 
 ```
 
-### 基本数据类型的排序
+
+## 基本数据类型的排序
 
 `Interface` 接口的三个函数分别用于获取长度(`Len`)、大小比较(`Less`)和交换(`Swap`)。对 `int`、`float64` 和 `string` 的排序，标准库已经做好了封装，直接调用即可。以 `int` 为例简单说明：
 
@@ -122,7 +127,9 @@ func main() {
 对 `float64` 和 `string` 的排序，和上面类似。需要注意的是，默认的 `sort.Less` 实现的是升序排列，如果想要让结果降序，可以先用 `sort.Reverse` 包装一次。这个调用会得到一个 `reverse` 的类型，包含一个 `Interface` 的匿名字段，其 `Less` 函数与 `Interface` 里的相反，从而实现逆序。
 
 
-### 自定义数据类型的排序
+
+## 自定义数据类型的排序
+
 
 如果要对自定义的数据类型进行排序，需要实现 `sort.Interface` 接口，也就是实现 `Len`、`Less` 和 `Swap` 三个函数。很多场景下 `Len` 和 `Swap`基本上和数据类型无关，所以实际上只有 `Less` 会有差别。
 例如有个游戏下载排行榜，知道游戏ID和对应的下载量，需要把数据根据下载量进行排序。
@@ -174,17 +181,15 @@ func main() {
 ```
 
 第一次输出结果是随机（每次运行结果都一样）生成的未排序的数据：
-
 ```js
 [<Item(1, 81)> <Item(2, 887)> <Item(3, 847)> <Item(4, 59)> <Item(5, 81)> <Item(6, 318)> <Item(7, 425)>]
 
 ```
 
 排序后：
-
 ```js
 [<Item(2, 887)> <Item(3, 847)> <Item(7, 425)> <Item(6, 318)> <Item(1, 81)> <Item(5, 81)> <Item(4, 59)>]
 ```
 
 
-### End
+## End
