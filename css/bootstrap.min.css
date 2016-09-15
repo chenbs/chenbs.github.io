@@ -1929,7 +1929,7 @@ pre {
     display: block;
     padding: 9.5px;
     margin: 0 0 10px;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.42857143;
     color: #333;
     word-break: break-all;
@@ -2631,7 +2631,7 @@ pre code {
         width: 75%
     }
     .col-lg-8 {
-        width: 75.66666667%
+        width: 70.66666667%
     }
     .col-lg-7 {
         width: 58.33333333%
@@ -2646,7 +2646,7 @@ pre code {
         width: 33.33333333%
     }
     .col-lg-3 {
-        width: 18%
+        width: 22%
     }
     .col-lg-2 {
         width: 16.66666667%
@@ -2770,7 +2770,7 @@ pre code {
         margin-right:200px;
     }
     .col-lg-offset-0 {
-        margin-left: 0
+        margin-left: -220px
     }
 }
 
