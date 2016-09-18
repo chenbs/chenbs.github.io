@@ -1,13 +1,9 @@
 <<<<<<< HEAD
-# HuxBlog Boilerplate
 
-##### This is the boilerplate of [Hux Blog](https://github.com/Huxpro/huxpro.github.io), all documents is over there!
+# My blog
 
-#### [View Boilerplate &rarr;](http://huangxuan.me/huxblog-boilerplate/)
+You can visit cccccio.com to see more .
 
-#### [View Live Hux Blog &rarr;](http://huangxuan.me)
+If you want to have one too , you can see the file 'README-zh.md'
 
-## If you like Hux Blog, Please star [huxpro.github.io repo](https://github.com/Huxpro/huxpro.github.io) instead of this! Thank you!
-=======
-# chenbs.github.io
->>>>>>> 2cc3f95bebd5085dc58d9628074005c7ce40b4a2
+Thank you ,you can find me with QQ:609709686.
