@@ -1986,8 +1986,8 @@ pre code {
 }
 
 .row {
-    margin-right: -110px;
-    margin-left: -50px
+    margin-right: -15px;
+    margin-left: -30px
 }
 
 .col-lg-1,
@@ -2631,7 +2631,7 @@ pre code {
         width: 75%
     }
     .col-lg-8 {
-        width: 70.66666667%
+        width: 88.66666667%
     }
     .col-lg-7 {
         width: 58.33333333%
@@ -2646,7 +2646,7 @@ pre code {
         width: 33.33333333%
     }
     .col-lg-3 {
-        width: 22%
+        width: 25%
     }
     .col-lg-2 {
         width: 16.66666667%
@@ -2763,14 +2763,14 @@ pre code {
         margin-left: 25%
     }
     .col-lg-offset-2 {
-        margin-left: 13.66666667%
+        margin-left: 16.66666667%
     }
     .col-lg-offset-1 {
-        margin-left: 80px;
-        margin-right:200px;
+        margin-left: 8.33333333%;
+        /*margin-right:200px;*/
     }
     .col-lg-offset-0 {
-        margin-left: -220px
+        margin-left: 0
     }
 }
 
