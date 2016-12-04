@@ -9,7 +9,7 @@ tags:
     - Golang
     - 服务器
 ---
-
+<meta name=”viewport” content=”width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes” />
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="720" height="86" src="http://music.163.com/outchain/player?type=2&id=423776475&auto=1&height=66"></iframe>
 <link rel="stylesheet" href="{{ site.baseurl }}/css/monokai-sublime.css">
 <script src="{{ site.baseurl }}/js/highlight.pack.js"></script>
