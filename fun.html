@@ -7,15 +7,6 @@ header-img: "img/home-bg.jpg"
 
 <script src="https://cdn.bootcss.com/FileSaver.js/2014-11-29/FileSaver.js"></script>
 
-<input type="button" id="export" value="导出"/>
-<script>
-$("#export).click(function(){
-    var content = "这是直接使用HTML5进行导出的";
-    var blob = new Blob([content], {type: "text/plain;charset=utf-8"});
-    saveAs(blob, "file.txt");
-});
-</script>
-
 
 <!-- Chinese Version -->
 <div class="zh post-container">
@@ -35,7 +26,7 @@ $("#export).click(function(){
     <form id="signupForm">
             <div class="login-error"></div>
             <div class="row" style="margin-top: -6px;">
-                <label class="field" for="username">名字,外号也行啦</label>
+                <label class="field" for="username">名字,外号也行啦</label><br/>
                 <input type="text" value="" class="input-text-user noPic input-click" name="username" id="username">
             </div>
             <div class="row">
