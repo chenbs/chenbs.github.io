@@ -1,0 +1,87 @@
+---
+layout: page
+title: "Fun"
+description: "Hey, nice to meet you :) "
+header-img: "img/about-bg.jpg"
+---
+
+
+<!-- Chinese Version -->
+<div class="zh post-container">
+    <blockquote>
+        测试你是海王中的谁！<br/>
+        三题见分晓！<br/>
+        
+        <label style="color: #FF3030;font-size: 30px;">时间紧迫！</label>就不整那些
+        <font color="#FF3030" size="10";>花</font>
+        <font color="#ADFF2F" size="6";>里</font>
+        <font color="#EEB422" size="6";>胡</font>
+        <font color="#B0E2FF" size="6";>哨</font>
+        的前端设计了，但是要明确一点，这不是作者的能力问题知道吧，主要是
+        <font color="#FF3030" size="6";> 时间紧迫</font>
+        ，是的，就是这样。
+    </blockquote>
+    <form id="signupForm">
+            <div class="login-error"></div>
+            <div class="row" style="margin-top: -6px;">
+                <label class="field" for="username">姓名<填真的才准！我不会收集你隐私的！></label>
+                <input type="text" value="" class="input-text-user noPic input-click" name="username" id="username">
+            </div>
+            <div class="row">
+                <label class="field" for="email">假如一直在追求你的邻村低配哈迪斯躺在你面前马上就嗝屁去世了，你会怎么做</label><br/>
+                <input type="radio" style="margin-left: 70px;" name="gender" id="gender" value="2">亲吻他并哭泣<br/>
+                <input type="radio" style="margin-left: 70px;" name="gender" id="gender" value="2">嘲讽他并捶他狗头<br/>
+                <input type="radio" style="margin-left: 70px;" name="gender" id="gender" value="2">打电话叫救护车<br/>
+                <input type="radio" style="margin-left: 70px;" name="gender" id="gender" value="2">大喊我是你爸爸我们是没有结果的！<br/>
+                <input type="radio" style="margin-left: 70px;" name="gender" id="gender" value="2">抢走他手里的两百万<br/>
+                <input type="radio" style="margin-left: 70px;" name="gender" id="gender" value="2">这个作者太辣鸡了我还有别的点子<br/>
+            </div>
+            <div class="row">
+                <label class="field" for="email">假如美杜莎拉着你要弄死一只蟑螂，你会怎么做</label><br/>
+                <input type="radio" style="margin-left: 70px;" name="gender" id="gender" value="2">亲吻蟑螂并哭泣<br/>
+                <input type="radio" style="margin-left: 70px;" name="gender" id="gender" value="2">亲吻美杜莎并哭泣<br/>
+                <input type="radio" style="margin-left: 70px;" name="gender" id="gender" value="2">嘲讽蟑螂并一拳戳爆<br/>
+                <input type="radio" style="margin-left: 70px;" name="gender" id="gender" value="2">对蟑螂大喊我是你爸爸你去死吧！<br/>
+                <input type="radio" style="margin-left: 70px;" name="gender" id="gender" value="2">不感兴趣转身就走顺手抢走美杜莎刚送到的外卖<br/>
+                <input type="radio" style="margin-left: 70px;" name="gender" id="gender" value="2">这个作者太辣鸡了我还有别的点子<br/>
+            </div>
+            <div class="row">
+                <label class="field" for="email">假如太阳神和雅典娜打起来了然后还有一份真挚的感情摆在你面前，你会怎么做</label><br/>
+                <input type="radio" style="margin-left: 70px;" name="gender" id="gender" value="2">题目听起来gay gay的, 先走了<br/>
+                <input type="radio" style="margin-left: 70px;" name="gender" id="gender" value="2">给他们唱一首如果我是DJ你会爱我吗<br/>
+                <input type="radio" style="margin-left: 70px;" name="gender" id="gender" value="2">去拥抱那份真挚的感情并问他为什么想不开<br/>
+                <input type="radio" style="margin-left: 70px;" name="gender" id="gender" value="2">开上AE86转身就走去找月亮女神<br/>
+                <input type="radio" style="margin-left: 70px;" name="gender" id="gender" value="2">这题其实是自由发挥的 这些选项都不重要<br/>
+                <input type="radio" style="margin-left: 70px;" name="gender" id="gender" value="2">要上班了先不说了<br/>
+            </div>
+            <br/><br/>
+            <div class="row tips">
+                <input type="checkbox" id="checkBox" disabled="true" checked>
+                <label >
+                我已阅读并同意 喜欢作者等服务条款，还必须打钩，你说气人不气人
+                </label>
+                <img src="http://img.smzy.com/imges/2017/0819/20170819105941761.jpg" height="100" width="100"/>
+            </div>
+            <center>
+                <button> 提交</button>
+            </center>
+            
+            </form>
+
+</div>
+
+<!-- Handle Language Change -->
+<script type="text/javascript">
+    var $zh = document.querySelector(".zh");
+    var $en = document.querySelector(".en");
+    function onLanChange(index){
+        if(index == 0){
+            $zh.style.display = "block";
+            $en.style.display = "none";
+        }else{
+            $en.style.display = "block";
+            $zh.style.display = "none";
+        }
+    }
+    onLanChange(0);
+</script>
