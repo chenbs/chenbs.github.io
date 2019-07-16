@@ -1,9 +1,9 @@
 # Site settings
-title: Chen's cat
+title: 明天就穿秋裤了
 SEOTitle: 5cio | Sexy-poetical
 header-img: img/home-bg.jpg
 email: jszycvip@gmail.com
-description: "A Sexy-poetical Technology Blog"
+description: "这是我自己的博客，什么都写啦，欢迎找我玩"
 keyword: ""
 url: "cccccio.com"              # your host, for absolute URL
 baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
@@ -12,7 +12,7 @@ baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 
 # SNS settings
 RSS: false
-weibo_username:     草莓味干锅牛柳
+weibo_username:     下次请你吃冰淇淋
 #zhihu_username:     huxpro
 github_username:    chenbs
 #twitter_username:  huxpro
